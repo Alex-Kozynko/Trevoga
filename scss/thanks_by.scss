@@ -1,0 +1,507 @@
+@import "_pxTOvw.scss";
+@import '_all-pages.scss';
+
+header {
+  padding-top: $a46;
+  padding-bottom: $a14;
+  box-sizing: border-box;
+  background: url(../img/thanks/bg_by.png);
+  background-size: 100% 100%;
+  background-position: center;
+  color: #fff;
+  z-index: 2;
+  position: relative;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img {
+      width: $a497;
+      z-index: 1;
+    }
+    .right {
+      padding-top: $a100;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      width: 50%;
+      h1 {
+        font-family: TrajanPro3-Bold;
+        font-size: $a54;
+        line-height: $a66;
+        white-space: pre-line;
+        padding: $a30 $a120 $a20 0;
+        background: $col-yellow;
+        width: $a800;
+        padding-left: $a210;
+        box-sizing: border-box;
+        margin-bottom: $a65;
+      }
+      .text {
+        font-family: 'PTSans-Bold';
+        font-size: $a24;
+        line-height: $a36;
+        white-space: pre-line;
+        align-self: flex-start;
+      }
+    }
+    .right.two {
+      align-items: stretch;
+      padding-top: $a40;
+      .ok {
+        font-family: TrajanPro3-Bold;
+        font-size: $a24;
+        text-transform: uppercase;
+        line-height: $a36;
+        margin-bottom: $a25;
+      }
+       h1 {
+        width: auto;
+        padding: $a20 $a40 $a15 $a30;
+        font-size: $a30;
+        margin-bottom: $a35;
+      }
+      .text {
+        font-family: 'PTSans-Regular';
+        font-size: $a20;
+        white-space: pre-line !important;
+        span {
+          font-family: 'PTSans-Bold';
+        }
+      }
+    }
+  }
+}
+
+h2 {
+  font-size: $a46;
+  font-family: TrajanPro3-Bold;
+  width: 100%;
+  text-align: center;
+  white-space: pre-line;
+  font-weight: 100;
+  font-size: $a34;
+  line-height: $a46;
+  text-transform: uppercase;
+}
+
+main {
+  background: #f1d8d1;
+  padding-top: $a100;
+  margin-top: -$a80;
+  display: flex;
+  flex-direction: column;
+  .line {
+    background: $col-orange;
+    width: $a3;
+    height: $a45;
+    margin: 0 auto;
+    margin-bottom: $a20;
+  }
+  .bg-yellow {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    background: $col-yellow;
+    height: $a80;
+  }
+  .video_course {
+    padding-top: $a60;
+    position: relative;
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: $a50;
+      .left {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        h2 {
+          text-align: left;
+        }
+        .text {
+          padding-bottom: $a20;
+        }
+        .proposition {
+          white-space: pre-line;
+          font-family: 'PTSans-Bold';
+          line-height: $a24;
+          padding: $a5 0;
+          border: 2px solid $col-orange;
+          border-left: 0;
+          border-right: 0;
+          margin-bottom: $a20;
+        }
+        .time {
+          display: flex;
+          align-items: center;
+          padding-bottom: $a40;
+          img {
+            width: $a37;
+            margin-right: $a25;
+            -webkit-animation-name: clock;
+            animation-name: clock;
+            animation-iteration-count: infinite;
+            animation-duration: 10s;
+          }
+        }
+      }
+      .right {
+        width: $a497;
+      }
+    }
+    .old-prise {
+      text-align: center;
+      padding-bottom: $a10;
+      text-decoration: line-through;
+      text-transform: uppercase;
+    }
+    .prise {
+      font-family: TrajanPro3-Bold;
+      font-size: $a34;
+      padding-bottom: $a35;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    .button {
+      margin-bottom: $a59;
+      margin: 0 auto;
+      &:hover {
+        color: #000;
+      }
+    }
+    .text2 {
+      text-transform: uppercase;
+      font-size: $a24;
+      text-align: center;
+      margin-top: $a60;
+      padding-bottom: $a10;
+    }
+    .timer {
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      width: $a350;
+      margin: auto;
+      margin-bottom: $a60;
+      .time_circles {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+      }
+      .time_circles > div {
+        position: absolute;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+        align-items: center;
+        top: 0 !important;
+        bottom: 0;
+        margin: auto;
+        padding-bottom: $a10;
+      }
+      .time_circles > div > h4 {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        text-transform: uppercase;
+        line-height: 1;
+        font-size: $a12 !important;
+      }
+      .time_circles > div > span {
+        margin: 0;
+        padding: 0;
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-family: 'OpenSans-Light';
+        font-size: $a33 !important;
+      }
+    }
+  }
+  .course {
+    background: url("../img/thanks/bg_by2.png");
+    background-size: 100% 100%;
+    padding-top: $a125;
+    padding-bottom: $a215;
+    z-index: 1;
+    position: relative;
+    color: #fff;
+    .container {
+      p {
+        font-size: $a24;
+        padding-bottom: $a45;
+        font-weight: 100;
+        span {
+          font-family: 'PTSans-Bold';
+          color: $col-yellow;
+        }
+      }
+      .text {
+        font-family: 'PTSans-Bold';
+        text-align: center;
+        white-space: pre-line;
+      }
+    }
+  }
+  .get {
+    padding-top: $a50;
+    padding-bottom: $a65;
+    .container {
+      .text {
+        font-family: 'PTSans-Bold';
+        font-size: $a24;
+        line-height: $a36;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+        img {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          margin: auto;
+          width: $a202;
+          z-index: -1;
+        }
+      }
+    }
+  }
+}
+
+.access {
+  padding: $a100 0;
+  background: url("../img/thanks/bg_by3.png"), linear-gradient(180deg, #f1d8d1 50%, $col-yellow 50%);
+  background-size: 100% 100%;
+  color: #fff;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    .left {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      .proposition {
+        white-space: pre-line;
+        font-family: 'PTSans-Bold';
+        line-height: $a24;
+        padding: $a5 0;
+        border: 2px solid $col-yellow;
+        border-left: 0;
+        border-right: 0;
+        margin-bottom: $a20;
+      }
+      h2 {
+        background: $col-yellow;
+        line-height: $a38;
+        padding: $a20 $a20 $a10 $a20;
+        text-align: left;
+        box-sizing: border-box;
+      }
+    }
+    .right {
+      .old-prise {
+        text-align: center;
+        padding-bottom: $a10;
+        text-decoration: line-through;
+        text-transform: uppercase;
+      }
+      .prise {
+        font-family: TrajanPro3-Bold;
+        font-size: $a34;
+        padding-bottom: $a35;
+        text-align: center;
+        text-transform: uppercase;
+      }
+      .button {
+        margin-bottom: $a59;
+        margin: 0 auto;
+      }
+    }
+  }
+  .text {
+    text-transform: uppercase;
+    font-size: $a24;
+    text-align: center;
+    margin-top: $a20;
+    padding-bottom: $a10;
+  }
+  .timer {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    width: $a350;
+    margin: auto;
+    .time_circles {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
+    .time_circles > div {
+      position: absolute;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      flex-direction: column-reverse;
+      align-items: center;
+      top: 0 !important;
+      bottom: 0;
+      margin: auto;
+      padding-bottom: $a10;
+    }
+    .time_circles > div > h4 {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      text-transform: uppercase;
+      line-height: 1;
+      font-size: $a12 !important;
+    }
+    .time_circles > div > span {
+      margin: 0;
+      padding: 0;
+      display: block;
+      width: 100%;
+      text-align: center;
+      font-family: 'OpenSans-Light';
+      font-size: $a33 !important;
+    }
+  }
+}
+
+@media screen and (max-width:1000px) {
+  header {
+    height: auto;
+    background-size: auto 100%;
+    padding-bottom: $m40;
+    padding-top: $m20;
+    background-color: #f1d8d1;
+    .container {
+      img {
+        display: none;
+      }
+      .right {
+        width: 100%;
+        h1 {
+          margin: 0 auto;
+          padding: $m5 $m10;
+          font-size: $m20;
+          width: auto;
+          height: auto;
+          white-space: normal;
+          line-height: initial;
+          margin-bottom: $m20;
+        }
+      }
+      .right.two {
+        h1 {
+          font-size: $m20;
+          margin-bottom: $m20;
+        }
+      }
+    }
+  }
+  main {
+    .video_course {
+      .container {
+        flex-direction: column-reverse;
+        align-items: center;
+        .right {
+          width: 70%;
+        }
+        .left {
+          .proposition {
+            text-align: center;
+            margin-bottom: $m10;
+          }
+          .time {
+            margin-bottom: $m10;
+            text-align: center;
+            justify-content: center;
+            width: 100%;
+            img {
+              width: $m20;
+            }
+          }
+          h2 {
+            font-size: $m18 !important;
+            padding-bottom: $m10;
+          }
+        }
+      }
+      .prise {
+        padding-bottom: $m10;
+      }
+      .text {
+        margin-top: $m10;
+        padding-bottom: $m20;
+      }
+      .timer {
+        width: 100%;
+        .time_circles>div>h4 {
+          font-size: $m16 !important;
+        }
+        .time_circles>div>span {
+          font-size: $m22 !important;
+        }
+      }
+    }
+    .course {
+      background-size: auto 100%;
+      background-position: 50% 0;
+      padding: $m50 0;
+      .container {
+        p {
+          white-space: normal !important;
+          margin-bottom: $m20;
+        }
+      }
+    }
+  }
+  .access {
+    background-size: auto 100%;
+    background-position: 50% 0;
+    padding-top: $m70;
+    padding-bottom: $m50;
+    .container {
+      flex-direction: column;
+      .left {
+        .proposition {
+          text-align: center;
+          margin-bottom: $m20;
+        }
+        h2 {
+          padding-top: $m10;
+          padding-bottom: $m10;
+          margin-bottom: $m20;
+        }
+      }
+      .right {
+        .prise {
+          margin-bottom: $m10;
+        }
+        .button {
+          margin-bottom: $m10;
+        }
+      }
+    }
+    .timer {
+      width: 100%;
+      .time_circles>div>h4 {
+        font-size: $m16 !important;
+      }
+      .time_circles>div>span {
+        font-size: $m22 !important;
+      }
+    }
+  }
+}
+

@@ -1,0 +1,136 @@
+.popup-forma.active {
+  opacity: 1;
+  z-index: 1000;
+  .form {
+    transform: scale(1);
+  }
+}
+
+.form-trigger {
+  cursor: pointer;
+}
+
+.popup-forma {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: -1;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  -ms-align-items: center;
+  align-items: center;
+  transition: all 0.5s;
+  overflow: hidden;
+  .close-bg {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+  }
+  .form {
+    background: #fff;
+    border-radius: $a8;
+    position: relative;
+    z-index: 1;
+    width: $a470;;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: $a40 0;
+    transform: scale(0);
+    transition: all 0.5s;
+    .close {
+      position: absolute;
+      top: $a20;
+      right: $a20;
+      cursor: pointer;
+    }
+    .title {
+      width: 100%;
+      font-size: $a36;
+      font-family: 'PTSans-Bold';
+      text-transform: uppercase;
+      text-align: center;
+      padding-bottom: $a40;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: $a330;
+      input {
+        border-style: solid;
+        border-width: 1px;
+        border-color: rgb(204, 204, 204);
+        border-radius: 8px;
+        background-color: rgb(255, 255, 255);
+        width: $a334;
+        height: $a64;
+        box-sizing: border-box;
+        margin-bottom: $a13;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family: 'PTSans-Regular';
+        font-size: $a20;
+        &:focus {
+          &:required:invalid {
+            border-color: red;
+          }
+        }
+        &:required:valid {
+          border-color: green;
+          border-width: 2px;
+        }
+      }
+      .button {
+        margin-top: $a25;
+        &:hover {
+          color: #000;
+        }
+      }
+    }
+  }   
+}
+
+@media screen and (max-width: 1000px) {
+    .popup-forma {
+        .form {
+            padding-top: $m20;
+            padding-bottom: $m20;
+            width: 90%;
+            border-radius: $m8;
+            .close {
+                top: $m10;
+                right: $m10;
+            }
+            .title {
+                font-size: $m20;
+                padding-bottom: $m20;
+                margin-bottom: $m20;
+            }
+            form {
+                width: 90%;
+                input {
+                    width: 100%;
+                    height: $m40;
+                    padding-left: $m10;
+                    margin-bottom: $m10;
+                    font-size: $m14;
+                }
+            }
+        }
+    }
+}

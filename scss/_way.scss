@@ -1,0 +1,120 @@
+.way {
+  padding-top: $a140;
+  padding-bottom: $a170;
+  background: url(../img/way/bg.png) no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  z-index: 2;
+  position: relative;
+  color: #fff;
+  .bg {
+    position: absolute;
+    bottom: 0;
+    left: $a50;
+    width: $a840;
+  }
+  .container {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    .right {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding-bottom: $a25;
+      h2 {
+        color: $col-yellow;
+        padding-bottom: $a30;
+        text-align: left;
+      }
+      .title {
+        padding: $a10 0;
+        border-top: 2px solid $col-yellow;
+        border-bottom: 2px solid $col-yellow;
+      }
+      ul {
+        padding-top: $a25;
+        padding-bottom: $a45;
+        li {
+          line-height: $a44;
+          display: flex;
+          white-space: pre-line;
+          span {
+            width: $a5;
+            height: $a5;
+            background: $col-yellow;
+            margin-right: $a15;
+            border-radius: 50%;
+            margin-top: $a20;
+          }
+        }
+      }
+      .text {
+        line-height: $a30;
+        white-space: pre-line;
+      }
+    }
+    .plash {
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+      padding: $a10 0;
+      background: $col-yellow;
+      .text {
+        width: 50%;
+        color: #000;
+        .title {
+          font-family: 'PTSans-Bold';
+          font-size: $a30;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:1000px) {
+  .way {
+    background-size: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: $m60;
+    padding-bottom: $m60;
+    .bg {
+      position: static;
+      width: 70%;
+    }
+    .container {
+      flex-direction: column-reverse;
+      margin-top: -$m10;
+      .plash {
+        height: auto;
+        padding: $m10 0;
+        text-align: center;
+        .text {
+          width: 100%;
+          text-align: center;
+        }
+      }
+      .right {
+        width: 100%;
+        margin-top: $m20;
+        .title {
+          text-align: center;
+          margin-bottom: $m10;
+        }
+        ul {
+          li {
+            margin-bottom: $m10;
+            span {
+              min-width: $m10;
+              height: $m10;
+              margin-right: $m10;
+            }
+          }
+        }
+      }
+    }
+  }
+}

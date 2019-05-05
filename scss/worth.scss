@@ -1,0 +1,237 @@
+@import "_pxTOvw.scss";
+@import '_all-pages.scss';
+@import '_jquery.fancybox.min.scss';
+
+
+header {
+  height: $a250;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../img/worth/bg.png");
+  background-size: 100% 100%;
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      font-family: TrajanPro3-Bold;
+      font-size: $a36;
+      color: $col-yellow;
+      padding-bottom: $a20;
+    }
+    .lesson {
+      font-family: TrajanPro3-Bold;
+      font-size: $a30;
+      color: #fff;
+      width: $a174;
+      height: $a62;
+      background: $col-yellow;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+main {
+  background: #f1d8d1;
+  padding-top: $a80;
+  position: relative;
+  z-index: 1;
+  padding-bottom: $a70;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    .left {
+      display: flex;
+      align-items: center;
+      width: $a870;
+      position: relative;
+      cursor: pointer;
+      img {
+        width: 100%;
+      }
+      .play {
+        width: $a89;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+        transition: 0.5s cubic-bezier(0.45, 0.18, 0.23, 3);
+      }
+      &:hover {
+        .play {
+          transform: scale(1.2);
+        }
+      }
+    }
+    .right {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .item {
+        position: relative;
+        box-shadow: 0px $a19 $a28 0.29px rgba(0, 4, 2, 0.12);
+        width: $a270;
+        height: $a152;
+        background: url("../img/worth/1.png");
+        background-size: 100% 100%;
+        z-index: 1;
+        cursor: pointer;
+        &:before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: -1;
+          background: rgba(0,0,0,0.7);
+          width: 100%;
+          height: 100%;
+          opacity: 0;
+        }
+        .num {
+          border-width: 1px;
+          border-color: rgba(255, 117, 80, 0.4);
+          border-style: solid;
+          border-radius: 50%;
+          position: absolute;
+          width: $a47;
+          height: $a47;
+          top: $a16;
+          left: $a16;
+          transition: 0.5s cubic-bezier(0.45, 0.18, 0.23, 3);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .circle {
+            transition: 0.5s cubic-bezier(0.45, 0.18, 0.23, 3);
+            transition-delay: 0.2s;
+            border-radius: 50%;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 0px $a8 $a16 0px rgba(0, 4, 2, 0.35);
+            width: $a37;
+            height: $a37;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $col-orange;
+            font-family: TrajanPro3-Bold;
+            font-size: $a22;
+            padding-top: $a5;
+            box-sizing: border-box;
+          }
+        }
+        .play {
+          width: $a38;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          margin: auto;
+          transition: 0.5s cubic-bezier(0.45, 0.18, 0.23, 3);
+        }
+        .text {
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: $a20;
+          margin: auto;
+          font-size: $a18;
+          color: #fff;
+          text-align: center;
+        }
+        &:hover {
+          .num {
+            transform: scale(1.1);
+            .circle {
+              transform: scale(1.1);
+            }
+          }
+        }
+      }
+      .item.lock {
+        cursor: auto;
+        &:before {
+          opacity: 1;
+        }
+      }
+    }
+    .reviews {
+      margin-top: $a50;
+      width: 100%;
+      height: $a115;
+      background: #fff;
+    }
+  }
+}
+
+@media screen and (max-width:1000px) {
+  header {
+    height: auto;
+    padding: $m20 0;
+    .container {
+      width: 100% !important;
+      h1 {
+        font-size: $m16;
+        text-align: center;
+      }
+      .lesson {
+        width: auto;
+        height: auto;
+        margin-top: $m10;
+        padding: $m5 $m5 $m3 $m5;
+      }
+    }
+  }
+  main {
+    padding-bottom: $m40;
+    .container {
+      flex-direction: column;
+      .left {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        margin-bottom: $m20;
+        display: none;
+        .play {
+          width: $m40;
+        }
+      }
+      .right {
+        width: 100%;
+        .item {
+          width: 100%;
+          height: $m160;
+          margin-bottom: $m15;
+          .play {
+            width: $m40;
+          }
+          .text {
+            bottom: $m10;
+          }
+          .num {
+            top: $m7;
+            left: $m7;
+            width: $m30;
+            height: $m30;
+            .circle {
+              width: 80%;
+              height: 80%;
+              padding-top: $m3;
+            }
+          }
+        }
+      }
+      .reviews {
+        height: $m60;
+      }
+    }
+  }
+}
